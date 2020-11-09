@@ -52,14 +52,14 @@ router.post('/', (req, res) => {
     username: req.body.username,
     password: req.body.password
   })
-  .then(dbUserData => {
-  req.session.save(() => {
-    req.session.user_id = dbUserData.id;
-    req.session.username = dbUserData.username;
-    req.session.loggedIn = true;
+    .then(dbUserData => {
+    req.session.save(() => {
+      req.session.user_id = dbUserData.id;
+      req.session.username = dbUserData.username;
+      req.session.loggedIn = true;
 
-    res.json(dbUserData);
-  });
+      res.json(dbUserData);
+    });
 });
 
 router.post('/login', (req, res) => {
