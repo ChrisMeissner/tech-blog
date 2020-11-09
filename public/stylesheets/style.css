@@ -24,10 +24,10 @@ a:hover {
 }
 
 button {
-  background-color: #225ca3;
+  background-color: #231010;
   border: 0;
   padding: 1%;
-  color: white;
+  color: #d9ead3;
   font-weight: bold;
   transition: background-color .1s;
   cursor: pointer;
@@ -35,7 +35,8 @@ button {
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: #231010;
+  opacity: .5;
 }
 
 .post-list {
