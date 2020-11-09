@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: white;
+  color: #231010;
   opacity: .5;
 }
 
@@ -47,12 +47,12 @@ button:hover {
 textarea, input {
   padding: .5%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #d9ead3;
 }
 
 textarea:focus, input:focus {
   outline: none;
-  border: 1px solid #3486eb;
+  border: 1px solid #d9ead3;
 }
 
 textarea {
@@ -78,7 +78,7 @@ form label {
 }
 
 header {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #231010;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,7 +100,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #231010;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -109,15 +109,17 @@ main {
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: #231010;
+  opacity: .5;
 }
 
 .delete-post-btn {
-  background-color: #d41414;
+  background-color: #231010;
 }
 
 .delete-post-btn:hover {
-  background-color: #ff643d;
+  background-color: #231010;
+  opacity: .5;
 }
 
 .post {
@@ -128,7 +130,7 @@ main {
 .post .title span {
   font-style: italic;
   font-size: 90%;
-  color: #7d7d7d;
+  color: #231010;
 }
 
 .edit-link {
@@ -146,7 +148,7 @@ main {
 }
 
 .comment:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: #d9ead3;
 }
 
 .comment .meta {
@@ -161,12 +163,4 @@ main {
 
 .edit-post-form {
   margin-bottom: 5%;
-}
-
-footer {
-  border-top: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-  font-size: 110%;
 }
