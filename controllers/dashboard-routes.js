@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
-const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, (req, res) => {
   console.log(req.session);
@@ -13,7 +12,7 @@ router.get('/', withAuth, (req, res) => {
     },
     attributes: [
       'id',
-      'post_url',
+      'commentText',
       'title',
       'created_at',
     ],
@@ -47,7 +46,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: [
       'id',
-      'post_url',
+      'commentText',
       'title',
       'created_at',
     ],

@@ -22,7 +22,7 @@ router.get('/:id', (req, res) => {
     include: [
       {
         model: Post,
-        attributes: ['id', 'title', 'post_url', 'created_at']
+        attributes: ['id', 'title', 'commentText', 'created_at']
       },
       {
         model: Comment,
@@ -70,7 +70,6 @@ router.post('/', (req, res) => {
 router.post('/login', (req, res) => {
   User.findOne({
     where: {
-      //?????????????????
       username: req.body.username
     }
   }).then(dbUserData => {
