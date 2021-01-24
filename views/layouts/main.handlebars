@@ -11,11 +11,11 @@
 <body>
   <div class="wrapper">
     <header>
-      <nav class="navbar navbar-dark">
+      <nav>
         <a href="/">Home</a>
         {{#if loggedIn}}
         <a href="/dashboard">Dashboard</a>
-        <a id="logout" >Logout</button>
+        <a id="logout">Logout</button>
         {{else}}
         <a href="/login">Login</a>
         {{/if}}
